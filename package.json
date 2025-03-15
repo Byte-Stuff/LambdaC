@@ -1,0 +1,25 @@
+{
+  "name": "lambdac",
+  "displayName": "LambdaC",
+  "description": "C like language for Lambda",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lamc",
+      "aliases": ["LambdaC", "lamc"],
+      "extensions": [".lc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lamc",
+      "scopeName": "source",
+      "path": "./syntaxes/lamc.tmLanguage.json"
+    }]
+  }
+}
